@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER PORTAL</title>
+    <link rel="stylesheet" href="css/user.css">
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .items {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="./images/safehaven.png" alt="" class="img-hmo">       
+    </div>
+    <div class="header">
+        <h1>Select Relief Assistance you require....<br></h1>
+        <div class="items">
+            <button class="item" onclick="hideShow1()">
+                <div class="item-button">
+                    <img src="./images/fire2.jpg" alt="">
+                    <span>Fire Aid and Disaster Response</span>
+                </div>
+            </button>
+            <button class="item" onclick="hideShow2()"><a> <img src="./images/ambulance.jpg" alt=""> Ambulance Service</a></button>
+            <button class="item" onclick="hideShow3()"><a> <img src="./images/police2.jpg" alt=""> Police Stations</a></button>
+            <button class="item" onclick="hideShow4()"><a> <img src="./images/animalrescue.jpg" alt=""> Animal Rescue Help</a></button>
+            <button class="item" onclick="hideShow5()"><a> <img src="./images/shelter2.jpg" alt=""> Disaster Management Open Shelters</a></button>
+        </div>       
+    </div>
+    <div class="blockimg" style="display: none;"> <!-- Initially hidden -->
+        <div class="images">
+            <div id="image1"><button onclick="hideShow6()"><img class="mapimage" src="./images/Map1.png" alt=""></button></div>
+            <div id="image2"><button onclick="hideShow7()"><img class="mapimage" src="./images/Map2.png" alt=""></button></div>
+            <div id="image3"><button onclick="hideShow8()"><img class="mapimage" src="./images/Map4.png" alt=""></button></div>
+            <div id="image4"><button onclick="hideShow9()"><img class="mapimage" src="./images/Map3.png" alt=""></button></div>
+            <div id="image5"><button onclick="hideShow10()"><img class="mapimage" src="./images/Map5.png" alt=""></button></div>
+        </div>
+        <div class="imageblock">
+            <div class="image_block1">
+                <table border="1px solid black">
+                    <tr>
+                        <td align="center">FIRE WIZARDS</td>
+                    </tr>
+                    <tr>
+                        <td>Available Resources: Firefighters, trucks etc..</td>
+                    </tr>
+                    <tr>
+                        <td>Contact Details: 9864XXXXXX</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="image_block2">
+                <table border="1px solid black">
+                    <tr>
+                        <td align="center">Ambulance Service Pvt. Ltd.</td>
+                    </tr>
+                    <tr>
+                        <td>Available Resources: 3 Ambulances, Drivers etc..</td>
+                    </tr>
+                    <tr>
+                        <td>Contact Details: 9864XXXXXX</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="image_block3">
+                <table border="1px solid black">
+                    <tr>
+                        <td align="center">Animal Shelters</td>
+                    </tr>
+                    <tr>
+                        <td>Available Resources: Pet house, veterinary doctors etc..</td>
+                    </tr>
+                    <tr>
+                        <td>Contact Details: 9864XXXXXX</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="image_block4">
+                <table border="1px solid black">
+                    <tr>
+                        <td align="center">Infocity Police Station</td>
+                    </tr>
+                    <tr>
+                        <td>Available Resources: Well Maintained Jails etc..</td>
+                    </tr>
+                    <tr>
+                        <td>Contact Details: 9864XXXXXX</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="image_block5">
+                <table border="1px solid black">
+                    <tr>
+                        <td align="center">Yuva Utkal Foundation</td>
+                    </tr>
+                    <tr>
+                        <td>Available Resources: Proper Shelters for the homeless etc..</td>
+                    </tr>
+                    <tr>
+                        <td>Contact Details: 9864XXXXXX</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+<script src="user.js"></script>
+<script>
+    function hideShow1() {
+        document.querySelector(".blockimg").style.display = "block"; // Show map
+        document.getElementById("image1").style.display = "block";
+        document.getElementById("image2").style.display = "none";
+        document.getElementById("image3").style.display = "none";
+        document.getElementById("image4").style.display = "none";
+        document.getElementById("image5").style.display = "none";
+        document.querySelector(".image_block1").style.display = "block";
+        document.querySelector(".image_block2").style.display = "none";
+        document.querySelector(".image_block3").style.display = "none";
+        document.querySelector(".image_block4").style.display = "none";
+        document.querySelector(".image_block5").style.display = "none";
+    }
+
+    function hideShow2() {
+        document.querySelector(".blockimg").style.display = "block"; // Show map
+        document.getElementById("image1").style.display = "none";
+        document.getElementById("image2").style.display = "block";
+        document.getElementById("image3").style.display = "none";
+        document.getElementById("image4").style.display = "none";
+        document.getElementById("image5").style.display = "none";
+        document.querySelector(".image_block1").style.display = "none";
+        document.querySelector(".image_block2").style.display = "block";
+        document.querySelector(".image_block3").style.display = "none";
+        document.querySelector(".image_block4").style.display = "none";
+        document.querySelector(".image_block5").style.display = "none";
+    }
+
+    function hideShow3() {
+        document.querySelector(".blockimg").style.display = "block"; // Show map
+        document.getElementById("image1").style.display = "none";
+        document.getElementById("image2").style.display = "none";
+        document.getElementById("image3").style.display = "block";
+        document.getElementById("image4").style.display = "none";
+        document.getElementById("image5").style.display = "none";
+        document.querySelector(".image_block1").style.display = "none";
+        document.querySelector(".image_block2").style.display = "none";
+        document.querySelector(".image_block3").style.display = "block";
+        document.querySelector(".image_block4").style.display = "none";
+        document.querySelector(".image_block5").style.display = "none";
+    }
+
+    function hideShow4() {
+        document.querySelector(".blockimg").style.display = "block"; // Show map
+        document.getElementById("image1").style.display = "none";
+        document.getElementById("image2").style.display = "none";
+        document.getElementById("image3").style.display = "block";
+        document.getElementById("image4").style.display = "none";
+        document.getElementById("image5").style.display = "none";
+        document.querySelector(".image_block1").style.display = "none";
+        document.querySelector(".image_block2").style.display = "none";
+        document.querySelector(".image_block3").style.display = "block";
+        document.querySelector(".image_block4").style.display = "none";
+        document.querySelector(".image_block5").style.display = "none";
+    }
+
+    function hideShow5() {
+        document.querySelector(".blockimg").style.display = "block"; // Show map
+        document.getElementById("image1").style.display = "none";
+        document.getElementById("image2").style.display = "none";
+        document.getElementById("image3").style.display = "none";
+        document.getElementById("image4").style.display = "none";
+        document.getElementById("image5").style.display = "block";
+        document.querySelector(".image_block1").style.display = "none";
+        document.querySelector(".image_block2").style.display = "none";
+        document.querySelector(".image_block3").style.display = "none";
+        document.querySelector(".image_block4").style.display = "none";
+        document.querySelector(".image_block5").style.display = "block";
+    }
+</script>
+</body>
+</html>
