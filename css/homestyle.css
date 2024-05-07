@@ -1,0 +1,239 @@
+.img-hmo{
+padding: 6px;
+margin-top: 12px;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav{
+    /* position: relative; */
+    padding: 7px 0 7px 0;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.volunteer-link {
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 10px; 
+    font-weight: bold; 
+    position: absolute;
+    right: 10px; 
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .donate-link {
+    color: black;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 10px; 
+    font-weight: bold; 
+    position: absolute;
+    right: 200px; 
+    margin: 15px;
+    padding: 10px;
+  }
+  
+.header{
+    font-size: 46px;
+    line-height: 60px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+    margin: 30px;
+    padding: 20px
+}
+
+.sub-header{
+    color: grey;
+    font-size: 32px;
+    padding: 20px;
+    line-height: normal;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+
+.hc{
+    color: red;
+}
+
+.agency-header{
+    text-align: left;
+    font-size: 34px;
+    line-height: 60px;
+    font-family:'Times New Roman', Times, serif;
+    margin: 30px;
+    padding: 20px;
+}
+
+.funding-header{
+    font-size: 34px;
+    line-height: 60px;
+    font-family:'Times New Roman', Times, serif; 
+    padding: 20px;
+}
+
+.user-header{
+    font-size: 34px;
+    line-height: 60px;
+    font-family:'Times New Roman', Times, serif; 
+    padding: 20px;
+    text-align: end;
+    margin-right: 200px;
+}
+
+.word-animation {
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.agency-btn{
+    text-align: center;
+    background:rgb(125, 236, 255);
+    margin-left: 210px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.user-btn{
+  background:rgb(125, 236, 255);
+  margin-left: 210px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.fund-btn{
+  background:rgb(125, 236, 255);
+  margin-left: 210px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.agency-portal{
+    padding: 50px;
+    margin-left:40px;
+}
+
+.user-portal{
+    padding: 20px;
+    margin:10px;
+    margin-top: 20px;
+}
+
+.funding-portal{
+  
+    padding: 50px;
+    margin:10px;
+    margin-top: 20px;
+}
+
+.agency{
+    float: right;
+    
+}
+
+.agency p{
+  text-align: justify;
+}
+
+.img-agency{ 
+  float:right;
+  margin-top: -5%;
+  width: 400px;
+}
+
+.img-user{
+float:left;
+margin-top: -5%;
+width: 540px;
+}
+
+.img-fund{
+    float:right;
+    margin-top: -15%;
+    margin-left: -25%;
+    }
+
+p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+@keyframes display {
+    0% {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn {
+    position: relative;
+    top: 50%; 
+    /* transform: translate(-50%, -25%);  */
+    width: 300px;
+    height: 350px; 
+    margin-bottom: -30px;
+    margin: 0 10px;
+  }
+  
+  .pic-ctn > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: display 10s infinite;
+    width: 100%; /* Make the image take the full width of its container */
+    height: 100%; /* Make the image take the full height of its container */
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 4s;
+  }
+  img:nth-child(4) {
+    animation-delay: 6s;
+  }
+  img:nth-child(5) {
+    animation-delay: 8s;
+  }
+  
+  .pic-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
